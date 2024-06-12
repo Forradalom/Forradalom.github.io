@@ -3,3 +3,19 @@ let z = [];for(i in c.signUps){z.push(c.signUps[i].name)};let a = new Set(z);
 
 document.querySelector("#test").innerHTML = z;
 
+/* fetch with header example
+    fetch('https://raid-helper.dev/api/v2/events/1250069917328474183, {
+    method: 'GET',
+    headers: {
+      "Content-Type":"application/json",
+      "Accept": "application/json",
+      "Authorization": "__TOKEN_HERE__"
+    }
+  }).then(result => {
+    console.log(result.json());
+}).catch(err => {
+    console.error(err);
+});
+/*
+
+
